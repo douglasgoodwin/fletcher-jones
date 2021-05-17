@@ -7,7 +7,7 @@ tags:
   - vuepress
 author: Sal
 featuredimg: 'https://images.unsplash.com/photo-1482876555840-f31c5ebbff1c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80'
-summary: First post with example markdown. 
+summary: First post with example markdown.
 ---
 
 ins a YAML front matter block will be processed by [gray-matter](https://github.com/jonschlinkert/gray-matter). The front matter must be the first thing in the markdown file and must take the form of valid YAML set between triple-dashed lines. Here is a basic example:
@@ -126,3 +126,7 @@ See: [Default Theme Config > Disable the Navbar](../theme/default-theme-config.m
 - Default: `undefined`
 
 See: [Default Theme Config > Sidebar](../theme/default-theme-config.md#sidebar).
+
+```html
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">weblog</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://cairn.com" property="cc:attributionName" rel="cc:attributionURL">Douglas Goodwin</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.<br />Based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="https://cs.cairn.com" rel="dct:source">https://cs.cairn.com</a>.
+```
