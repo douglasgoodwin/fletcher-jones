@@ -13,4 +13,5 @@ fields:
     required: false
   label: description
 pages:
-- docs/about.md
+- docs/_pages/about.md
+- docs/_pages/more.md

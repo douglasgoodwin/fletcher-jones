@@ -7,15 +7,19 @@ module.exports = themeConfig => {
    * Default theme configuration
    */
   themeConfig = Object.assign(themeConfig, {
-    logo: '/assets/img/logo.png',
+    logo: './assets/img/logo.png',
     nav: themeConfig.nav || [
       {
-        text: 'Blog',
+        text: 'blog',
         link: '/',
       },
       {
-        text: 'Tags',
+        text: 'tags',
         link: '/tag/',
+      },
+      {
+        text: 'pages',
+        link: '/pages/',
       },
     ],
     summary: themeConfig.summary === undefined ? true : themeConfig.summary,
@@ -35,6 +39,11 @@ module.exports = themeConfig => {
         id: 'post',
         dirname: '_posts',
         path: '/',
+      },
+      {
+        id: 'pages',
+        dirname: '_pages',
+        path: '/pages/',
       },
     ],
     frontmatters: [

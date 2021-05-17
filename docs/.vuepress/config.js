@@ -1,97 +1,65 @@
 module.exports = {
-  title: 'Mediumish',
+  title: 'Goodwin at Scripps College',
   base: '/',
   dest: 'public',
-  description: 'Mediumish theme with VuePress and Forestry',
+  description: 'Fletcher-Jones Scholar of Computation at Scripps College',
   logo: './assets/img/logo.png',
   theme: require.resolve('../../'),
   themeConfig: {
-  authors: [
+    displayAllHeaders: true, // Default: false
+    nav: [
+      { text: 'home', link: '/' },
+      { text: 'about', link: '/pages/about' },
+      { text: 'pages', link: '/pages/', exact: false },
+      { text: 'posts', link: '/' },
+      { text: 'cairn.com', link: 'https://cairn.com' }
+    ],
+    authors: [
       {
-      name: 'Sal',
-      avatar: '/assets/img/sal.jpg',
-      link: 'https://wowthemes.net/donate',
-      linktext: 'Follow',
+        name: 'Doug',
+        avatar: './assets/img/doug.jpg',
+        link: 'https://cairn.com/',
+        linktext: 'Follow',
       },
       {
-        name: 'John Doe',
-        avatar: '/assets/img/avatar.png',
-        link: 'https://bootstrapstarter.com/',
+        name: 'Douglas Goodwin',
+        avatar: './assets/img/avatar.png',
+        link: 'https://cairn.com/',
         linktext: 'Follow',
       },
     ],
     footer: {
       contact: [
         {
-          type: 'codepen',
-          link: '#',
-        },
-        {
-          type: 'facebook',
-          link: '#',
-        },
-        {
           type: 'github',
-          link: 'https://github.com/wowthemesnet/mediumish-vuepress-blog-theme',
-        },
-        {
-          type: 'gitlab',
-          link: '#',
+          link: 'https://github.com/douglasgoodwin',
         },
         {
           type: 'instagram',
-          link: '#',
-        },
-        {
-          type: 'linkedin',
-          link: '#',
-        },
-        {
-          type: 'mail',
-          link: '#',
-        },
-        {
-          type: 'messenger',
-          link: '#',
-        },
-        {
-          type: 'phone',
-          link: '#',
-        },
-        {
-          type: 'twitter',
-          link: 'https://twitter.com/wowthemesnet',
-        },
-        {
-          type: 'web',
-          link: '#',
+          link: 'https://www.instagram.com/douglasrgoodwin',
         }
       ],
       copyright: [
         {
           text: 'Licensed MIT.',
-          link: 'https://bootstrapstarter.com/license/',
-        },
-        {
-          text: 'Made with Mediumish - free Vuepress theme',
-          link: 'https://bootstrapstarter.com/bootstrap-templates/vuepress-theme-mediumish/',
+          link: 'https://opensource.org/licenses/MIT/',
         },
       ],
     },
 
     sitemap: {
-      hostname: 'https://github.com/wowthemesnet/vuepress-theme-mediumish/'
+      hostname: 'https://github.com/douglasgoodwin/vuepress-theme-mediumish/'
     },
     comment: {
       service: 'disqus',
       shortname: 'demowebsite',
     },
-    newsletter: {
-      endpoint: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&id=8c3d2d214b'
-    },
-    feed: {
-      canonical_base: 'https://github.com/wowthemesnet/vuepress-theme-mediumish/',
-    },
+    // newsletter: {
+    //   endpoint: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&id=8c3d2d214b'
+    // },
+    // feed: {
+    //   canonical_base: 'https://github.com/wowthemesnet/vuepress-theme-mediumish/',
+    // },
     smoothScroll: true
   },
 }
