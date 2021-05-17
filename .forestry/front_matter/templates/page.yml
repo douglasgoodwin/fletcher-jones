@@ -12,3 +12,5 @@ fields:
   config:
     required: false
   label: description
+pages:
+- docs/test.md
