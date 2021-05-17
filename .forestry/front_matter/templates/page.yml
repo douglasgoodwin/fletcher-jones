@@ -12,5 +12,10 @@ fields:
   config:
     required: false
   label: description
+- name: gallery
+  type: image_gallery
+  config: {}
+  label: gallery
+  description: image gallery
 pages:
 - docs/test.md
